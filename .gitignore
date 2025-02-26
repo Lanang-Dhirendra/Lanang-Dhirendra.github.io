@@ -1,0 +1,7 @@
+node_modules
+package*.json
+.vscode
+tailwind.config.*
+*_local.*
+*_local/
+input.css

@@ -1,7 +1,270 @@
 <!DOCTYPE html>
-<html>
-   <head></head>
-   <body>
-      <p>ngetes</p>
-   </body>
+<html lang="en" class="scroll-smooth">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lanang Dhirendra</title>
+   <link href="./style.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="w-full h-full relative bg-blue-900 text-sky-200 text-center text-[90px] overflow-x-hidden">
+
+   <!--
+   ============================================================================================================================
+   ========================================================== NavBar ==========================================================
+   ============================================================================================================================
+   -->
+   <nav class="sticky top-0 flex flex-row flex-wrap place-content-center bg-blue-900 text-sky-400 text-lg py-2 opacity-95 z-50">
+      <a class="px-3 py-1 sm:py-2 hover:bg-blue-700" href="#">
+         <i class="fa fa-home sm:mr-1"></i>
+         <span class="hidden sm:inline">Home</span>
+      </a>
+      <a class="px-3 py-1 sm:py-2 hover:bg-blue-700" href="#profil">
+         <i class="fa fa-user sm:mr-1"></i>
+         <span class="hidden sm:inline">Profile</span>
+      </a>
+      <a class="px-3 py-1 sm:py-2 hover:bg-blue-700" href="#skills">
+         <i class="fa fa-cogs sm:mr-1"></i>
+         <span class="hidden sm:inline">Skills</span>
+      </a>
+      <a class="px-3 py-1 sm:py-2 hover:bg-blue-700" href="#hstory">
+         <i class="fa fa-book sm:mr-1"></i>
+         <span class="hidden sm:inline">History</span>
+      </a>
+      <a class="px-3 py-1 sm:py-2 hover:bg-blue-700" href="#portos">
+         <i class="fa fa-id-card sm:mr-1"></i>
+         <span class="hidden sm:inline">Porto<span class="hidden lg:inline">folios</span></span>
+      </a>
+      <a class="px-3 py-1 sm:py-2 hover:bg-blue-700" href="#footer">
+         <i class="fa fa-phone sm:mr-1"></i>
+         <span class="hidden sm:inline">Contact</span>
+      </a>
+   </nav>
+
+   <!-- ============================== screen type for debugging; remove later, testing only ============================== -->
+   <div id="screen-type" class="bg-sky-200 text-blue-800 text-base fixed left-3 z-50">
+      <p>screen is
+         <span class="           inline  sm:hidden">xtra small</span>
+         <span class="hidden  sm:inline  md:hidden">small</span>
+         <span class="hidden  md:inline  lg:hidden">medium</span>
+         <span class="hidden  lg:inline  xl:hidden">large</span>
+         <span class="hidden  xl:inline 2xl:hidden">xtra large</span>
+         <span class="hidden 2xl:inline           ">xtra xtra large</span>
+      </p>
+   </div>
+
+   <div id="content" class="flex flex-row flex-wrap place-content-center bg-gradient-to-tl from-teal-200 to-sky-200 text-blue-800 px-[4%] pt-4 pb-16">
+      
+      <!--
+      =========================================================================================================================
+      ====================================================== Page Header ======================================================
+      =========================================================================================================================
+      -->
+      <div id="header" class="flex flex-row flex-wrap justify-center w-full relative bg-gradient-to-tl from-blue-300 to-sky-300 p-4 borderShadow">
+         <div class="w-3/4 sm:w-2/5 sm:max-w-[360px] h-min relative bg-blue-900 overflow-hidden borderShadow">
+            <img src="imgs/self.jpg">
+         </div>
+         <div class="flex flex-col w-full sm:w-1/2 grow sm:px-6">
+            <h1 class="text-left mt-2 md:mt-4 lg:mt-6 text-[5vh] font-bold uppercase tracking-[-0.1em] leading-[100%] word-space-1">
+               I Gusti Lanang Dhirendra Dwiputra Widyantara
+            </h1>
+            <p class="text-left mt-4 sm:mt-8 text-md">A primarily Backend Dev that also dabbles in a bit of everything.</p>
+            <p class="text-left mt-4 sm:mt-8 text-md">Currently an active member at school robotics club</p>
+         </div>
+      </div>
+
+      <!--
+      =========================================================================================================================
+      ======================================================== Profile ========================================================
+      =========================================================================================================================
+      -->
+      <div id="profil" class="w-full sm:w-1/3 -mt-12 pt-16 sm:-mt-12 sm:pt-16 sm:px-6">
+         <h1 class="text-xl font-bold uppercase mb-2"><i class="fa fa-user mr-2"></i>Profile</h1>
+         <div class="flex flex-row flex-wrap place-content-center w-full"></div>
+      </div>
+
+      <!--
+      =========================================================================================================================
+      ========================================================= Skills ========================================================
+      =========================================================================================================================
+      -->
+      <div id="skills" class="w-full sm:w-1/3 -mt-20 pt-24 sm:-mt-12 sm:pt-16">
+         <h1 class="text-xl font-bold uppercase mb-2"><i class="fa fa-cogs mr-2"></i>Skills</h1>
+         <div class="flex flex-row flex-wrap place-content-center w-full">
+            <div class="w-1/3 h-max grow relative text-center bg-blue-400 mx-2 mb-4 px-2 md:px-4 pb-4 md:pb-6 pt-2 borderShadow">
+               <img src="imgs/go.svg" class="inline-block max-h-24 my-2">
+               <div class="flex flex-col grow w-full h-full text-md">
+                  <p class="pt-2">Golang</p>
+                  <a target="_blank" href="https://go.dev">(link)</a>
+               </div>
+            </div>
+            <div class="w-1/3 h-min grow relative text-center bg-blue-400 mx-2 mb-4 px-2 md:px-4 pb-4 md:pb-6 pt-2 borderShadow">
+               <img src="imgs/bundle.png" class="inline-block max-h-24">
+               <div class="flex flex-col grow w-full h-full text-md">
+                  <p class="pt-2">HTML / CSS / JS</p>
+                  <a target="_blank" href="#home">(link)</a>
+               </div>
+            </div>
+            <div class="w-1/3 h-min grow relative text-center bg-blue-400 mx-2 mb-4 px-2 md:px-4 pb-4 md:pb-6 pt-2 borderShadow">
+               <img src="imgs/" class="inline-block max-h-24">
+               <div class="flex flex-col grow w-full h-full text-md">
+                  <p class="pt-2">aaa</p>
+                  <a target="_blank" href="https://youtu.be/dQw4w9WgXcQ">(link)</a>
+               </div>
+            </div>
+            
+         </div>
+         <div class="min-h-16 block relative bg-blue-400 text-md mx-2 mb-4 borderShadow">
+            <p>also knows/learns: ___, ___, ___</p>
+            <ul>
+               <li>test</li>
+               <li>123</li>
+            </ul>
+         </div>
+      </div>
+
+      <!--
+      =========================================================================================================================
+      ======================================================== History ========================================================
+      =========================================================================================================================
+      -->
+      <div id="hstory" class="w-full sm:w-1/3 -mt-20 pt-24 sm:-mt-12 sm:pt-16 sm:px-6">
+         <h1 class="text-xl font-bold uppercase mb-2"><i class="fa fa-book mr-2"></i>History</h1>
+         <div class="space-y-4">
+            <div>
+               <h2 class="text-left text-lg font-semibold pl-2 border-b-2 border-blue-900 border-solid">2024</h2>
+               <ul class="text-left text-md">
+                  <li class="pl-8 py-1 border-b-2 border-sky-300 border-solid">
+                     Junior Backend Dev Certificate from BTW Edutech 
+                     <a class="text-sky-500 underline hover:text-blue-600" target="_blank" 
+                        href="https://cdn.btwedutech.com/intership/certificate/K9R8L6T3X2PQM.pdf">(link)</a>
+                  </li>
+                  <li class="pl-8 py-1 border-b-2 border-sky-300 border-solid">
+                     ephotech excel
+                     <a class="text-sky-500 underline hover:text-blue-600" target="_blank" 
+                        href="#">(link)</a>
+                  </li>
+                  <li class="pl-8 py-1 border-b-2 border-sky-300 border-solid"> <!-- ..add? -->
+                     polnas lf
+                     <a class="text-sky-500 underline hover:text-blue-600" target="_blank" 
+                        href="#">(link)</a>
+                  </li>
+                  <li class="pl-8 py-1 border-b-2 border-sky-300 border-solid">
+                     lttc lf
+                     <a class="text-sky-500 underline hover:text-blue-600" target="_blank" 
+                        href="#">(link)</a>
+                  </li>
+                  <li class="pl-8 py-1 border-b-2 border-sky-300 border-solid">
+                     glm math
+                     <a class="text-sky-500 underline hover:text-blue-600" target="_blank" 
+                        href="#">(link)</a>
+                  </li>
+               </ul>
+            </div>
+            <div>
+               <h2 class="text-left text-lg font-semibold pl-2 border-b-2 border-blue-900 border-solid">2023</h2>
+               <ul class="text-left text-md"> <!-- ..add? -->
+                  <li class="pl-8 py-1 border-b-2 border-sky-300 border-solid">
+                     ephotech excel
+                     <a class="text-sky-500 underline hover:text-blue-600" target="_blank" 
+                        href="#">(link)</a>
+                  </li>
+                  <li class="pl-8 py-1 border-b-2 border-sky-300 border-solid">
+                     Best Student Angkatan 74 SMP (SLUB) Saraswati 1 Denpasar 
+                     <a class="text-sky-500 underline hover:text-blue-600" target="_blank" 
+                        href="#">(link)</a>
+                  </li>
+                  <li class="pl-8 py-1 border-b-2 border-sky-300 border-solid">
+                     anugrah math
+                     <a class="text-sky-500 underline hover:text-blue-600" target="_blank" 
+                        href="#">(link)</a>
+                  </li>
+                  <li class="pl-8 py-1 border-b-2 border-sky-300 border-solid">
+                     paras ict excel
+                     <a class="text-sky-500 underline hover:text-blue-600" target="_blank" 
+                        href="#">(link)</a>
+                  </li>
+                  <li class="pl-8 py-1 border-b-2 border-sky-300 border-solid">
+                     kac math
+                     <a class="text-sky-500 underline hover:text-blue-600" target="_blank" 
+                        href="#">(link)</a>
+                  </li>
+                  <li class="pl-8 py-1 border-b-2 border-sky-300 border-solid">
+                     gelasis math
+                     <a class="text-sky-500 underline hover:text-blue-600" target="_blank" 
+                        href="#">(link)</a>
+                  </li>
+                  <li class="pl-8 py-1 border-b-2 border-sky-300 border-solid">
+                     gelasis science-project
+                     <a class="text-sky-500 underline hover:text-blue-600" target="_blank" 
+                        href="#">(link)</a>
+                  </li>
+                  <li class="pl-8 py-1 border-b-2 border-sky-300 border-solid">
+                     glm math
+                     <a class="text-sky-500 underline hover:text-blue-600" target="_blank" 
+                        href="#">(link)</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+
+      <!--
+      =========================================================================================================================
+      ====================================================== Portofolios ======================================================
+      =========================================================================================================================
+      -->
+      <div id="portos" class="w-full -mt-20 pt-24 sm:-mt-12 sm:pt-16">
+         <h1 class="text-xl font-bold uppercase mb-2"><i class="fa fa-id-card mr-2"></i>Portofolios</h1>
+         <div class="flex flex-row flex-wrap place-content-center">
+            <div class="w-full min-h-36 mx-2 mb-4 bg-blue-300 borderShadow">
+               <a class="text-sky-500 underline text-lg hover:text-blue-600" target="_blank" href="./ujian-praktek/">web ujian praktek</a>
+            </div>
+            <div class="w-full min-h-36 mx-2 mb-4 bg-blue-300 borderShadow">
+               <a class="text-sky-500 underline text-lg hover:text-blue-600" target="_blank" href="https://reverse-proxy-production-a709.up.railway.app/">final project</a>
+               <img src="web.png" class="">
+               <p class="text-md">
+                  co-created w/ 
+                  <a href="https://github.com/Pande17"       target="_blank" class="text-sky-500 underline hover:text-blue-600">Pande</a>, 
+                  <a href="https://github.com/erza-503"      target="_blank" class="text-sky-500 underline hover:text-blue-600">Rendy</a>, and 
+                  <a href="https://github.com/KadekLiantini" target="_blank" class="text-sky-500 underline hover:text-blue-600">Lian</a>.
+                  <a href="https://github.com/Pande17/certificate-generator" target="_blank" class="text-sky-500 underline hover:text-blue-600">(GitHub repo)</a>
+               </p>
+            </div>
+            <div class="w-full min-h-36 mx-2 mb-4 bg-blue-300 borderShadow">
+               <a class="text-sky-500 underline text-lg hover:text-blue-600" target="_blank" href="./random/">random stuffs</a>
+            </div>
+            <div class="w-full min-h-36 mx-2 mb-4 bg-blue-300 borderShadow">
+               <a class="text-sky-500 underline text-lg hover:text-blue-600" target="_blank" href="./school-web-1/">school web</a>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+   <!--
+   ============================================================================================================================
+   ========================================================== Footer ==========================================================
+   ============================================================================================================================
+   -->
+   <div id="footer" class="w-screen h-fit absolute bottom-0 bg-blue-900 text-md text-sky-400 py-2">
+      <a class="px-2 py-1 sm:py-2 md:my-2 hover:bg-blue-700" target="_blank" href="https://www.instagram.com/heyitslanang">
+         <i class="fa fa-instagram sm:mr-1"></i>
+         <span class="hidden sm:inline">Instagram</span>
+      </a>
+      <a class="px-2 py-1 sm:py-2 md:my-2 hover:bg-blue-700" target="_blank" href="https://github.com/Lanang-Dhirendra">
+         <i class="fa fa-github sm:mr-1"></i>
+         <span class="hidden sm:inline">GitHub</span>
+      </a>
+      <a class="px-2 py-1 sm:py-2 md:my-2 hover:bg-blue-700" target="_blank" href="mailto:a.lanangdhirendra.slub@gmail.com">
+         <i class="fa fa-envelope-o sm:mr-1"></i>
+         <span class="hidden sm:inline">Email</span>
+      </a>
+      <p class="block text-sm text-sky-200">Lanang Dhirendra</p>
+   </div>
+
+</body>
+
 </html>
